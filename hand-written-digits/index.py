@@ -16,11 +16,12 @@ imgCount = toInt(imgsf.read(4))
 imgRows = toInt(imgsf.read(4))
 imgCollums = toInt(imgsf.read(4))
 
-for i in range(imgRows):
-    row = ""
-    for j in range(imgCollums):
-        if toInt(imgsf.read(1)) < 128:
-            row += "█"
-        else:  
-            row += " "
-    print(row)
+
+# for i in range(imgRows):
+#     row = ""
+#     for j in range(imgCollums):
+#         if toInt(imgsf.read(1)) < 128:
+#             row += "█"
+#         else:  
+#             row += " "
+#     print(row)
